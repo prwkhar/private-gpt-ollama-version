@@ -14,9 +14,9 @@ embedding:
   embed_dim: 768
 
 ollama:
-  llm_model: llama3.1
+  llm_model: deepseek-r1:32b
   embedding_model: nomic-embed-text
-  api_base: http://localhost:11434
+  api_base: http://ollama.ecitis.org:80
 
 nodestore:
   database: postgres

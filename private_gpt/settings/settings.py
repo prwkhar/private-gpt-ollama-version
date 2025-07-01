@@ -282,19 +282,19 @@ class GeminiSettings(BaseModel):
 
 class OllamaSettings(BaseModel):
     api_base: str = Field(
-        "http://localhost:11434",
+        "https://ollama.ecitis.org",
         description="Base URL of Ollama API. Example: 'https://localhost:11434'.",
     )
     embedding_api_base: str = Field(
-        "http://localhost:11434",
+        "https://ollama.ecitis.org",
         description="Base URL of Ollama embedding API. Example: 'https://localhost:11434'.",
     )
     llm_model: str = Field(
-        None,
+        "deepseek-r1:32b",
         description="Model to use. Example: 'llama2-uncensored'.",
     )
     embedding_model: str = Field(
-        None,
+        "nomic-embed-text",
         description="Model to use. Example: 'nomic-embed-text'.",
     )
     keep_alive: str = Field(
